@@ -16,7 +16,7 @@ hunter_add_package(ZLIB)
 find_package(ZLIB CONFIG REQUIRED)
 
 add_executable(foo main.c)
-target_link_libraries(foo ZLIB::zlib)
+target_link_libraries(foo ZLIB::ZLIB)
 
 # Compatibility mode
 find_package(ZLIB REQUIRED)
@@ -25,9 +25,9 @@ if(is_empty)
   message(FATAL_ERROR "Expected non-empty")
 endif()
 
-string(COMPARE EQUAL "${ZLIB_LIBRARIES}" "ZLIB::zlib" is_good)
+string(COMPARE EQUAL "${ZLIB_LIBRARIES}" "ZLIB::ZLIB" is_good)
 if(NOT is_good)
-  message(FATAL_ERROR "Expected ZLIB::zlib but not ${ZLIB_LIBRARIES}")
+  message(FATAL_ERROR "Expected ZLIB::ZLIB but not ${ZLIB_LIBRARIES}")
 endif()
 
 include_directories("${ZLIB_INCLUDE_DIRS}")

@@ -11,5 +11,5 @@ get_target_property(
 set_target_properties(
     Boost::iostreams
     PROPERTIES
-    INTERFACE_LINK_LIBRARIES "${_interface_link_libraries};ZLIB::zlib"
+    INTERFACE_LINK_LIBRARIES "${_interface_link_libraries};ZLIB::ZLIB"
 )

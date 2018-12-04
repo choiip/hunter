@@ -17,4 +17,4 @@ ZLIB
 
     hunter_add_package(ZLIB)
     find_package(ZLIB CONFIG REQUIRED)
-    target_link_libraries(... ZLIB::zlib)
+    target_link_libraries(... ZLIB::ZLIB)
