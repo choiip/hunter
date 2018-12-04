@@ -149,6 +149,7 @@ hunter_default_version(WebP VERSION 0.6.1-p4)
 hunter_default_version(WinSparkle VERSION 0.4.0)
 hunter_default_version(ZLIB VERSION 1.2.8-p3)
 hunter_default_version(ZMQPP VERSION 4.1.2-p3)
+hunter_default_version(ZZip VERSION 0.13.69)
 hunter_default_version(ZeroMQ VERSION 4.2.3-p1)
 
 hunter_default_version(acf VERSION 0.1.14)
